@@ -1,0 +1,13 @@
+.vbox {
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-background-color: black;
+    -fx-alignment: center;
+    -fx-padding: 20px;
+}
+
+.button {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
