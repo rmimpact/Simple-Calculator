@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 
-public class Main extends Application {
+public class Calculator extends Application {
 
     @Override
     public void start (Stage primaryStage) {
