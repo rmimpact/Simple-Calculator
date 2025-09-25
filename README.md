@@ -1,3 +1,3 @@
-# testJava
+# Simple Calculator
 
-this is a testing ground for my first JavaFX apps.
+My First Calculator App 😋
