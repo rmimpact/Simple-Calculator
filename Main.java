@@ -62,13 +62,13 @@ public class Main extends Application {
         Scene scene = new Scene(box, 300, 200);
         scene.getStylesheets().add(uri);
 
-
-
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
+    //Calculator Functions -------------------------------
 
+    //Addition
     public void add (TextField fNumField, TextField sNumField, TextField rField) {
         try {
             double num1 = Double.parseDouble(fNumField.getText());
@@ -81,6 +81,7 @@ public class Main extends Application {
         }   
     }
 
+    //Subtraction
     public void sub (TextField fNumField, TextField sNumField, TextField rField) {
         try {
             double num1 = Double.parseDouble(fNumField.getText());
@@ -93,13 +94,20 @@ public class Main extends Application {
         }
     }
 
+    //Multiplication
     public void mul (TextField fNumField, TextField sNumField, TextField rField) {
+        try {
             double num1 = Double.parseDouble(fNumField.getText());
             double num2 = Double.parseDouble(sNumField.getText());
             double result = num1 * num2;
             rField.setText(String.valueOf(result));
+        }   
+        catch (NumberFormatException e) {
+            rField.setText("Error");
+        } 
     }
 
+    //Division
     public void div (TextField fNumField, TextField sNumField, TextField rField) {
         try {
             double num1 = Double.parseDouble(fNumField.getText());
@@ -112,6 +120,7 @@ public class Main extends Application {
         }
     }
 
+    //Main Method
     public static void main (String[] args) {
         launch(args);
     }
